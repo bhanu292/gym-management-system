@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management</title>
+    <link rel="stylesheet" href="css/attendance.css">
+</head>
+<body>
+    <div class="container">
+    <aside class="sidebar">
+    <h2>GYM</h2>
+    <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+
+                <li><a href="add-member.html">Add Member</a></li>
+
+                <li><a href="members.html">Members</a></li>
+
+                <li><a href="attendance.html" class="active">Attendance</a></li>
+
+                <li><a href="attendance-history.html">Attendance-History</a></li>
+
+                <li><a href="payments.html">Payments</a></li>
+
+                <li><a href="reports.html">Reports</a></li>
+
+                <li><a href="index.html">Logout</a></li>
+    </ul>
+    </aside>
+    <main class="main-content">
+        <h1>Attendance Management</h1>
+        <div class="top-bar">
+            <input type="text" id="search" placeholder="Search by name...">
+            <input type="date" id="attendanceDate">
+        </div>
+        <div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="attendanceTable"></tbody>
+    </table>
+    </div>
+    </main>
+    </div>
+    <script src="js/attendance.js"></script>
+</body>
+</html>

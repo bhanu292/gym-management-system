@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #111827;
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background: #1f2937;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background: #2563eb;
+}
+
+.main-content {
+    flex: 1;
+    padding: 30px;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #9ca3af;
+}
+
+
+.form-container {
+    margin-top: 30px;
+    background: #1f2937;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+#memberForm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 8px;
+}
+
+.input-group input,
+.input-group select {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #374151;
+    color: white;
+    outline: none;
+}
+
+.buttons {
+    grid-column: span 2;
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.save-btn,
+.reset-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.save-btn {
+    background: #22c55e;
+    color: white;
+}
+
+.reset-btn {
+    background: #ef4444;
+    color: white;
+}
+
+.save-btn:hover {
+    background: #16a34a;
+}
+
+.reset-btn:hover {
+    background: #dc2626;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    #memberForm {
+        grid-template-columns: 1fr;
+    }
+
+    .buttons {
+        grid-column: span 1;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports</title>
+    <link rel="stylesheet" href="css/reports.css">
+</head>
+<body>
+    <div class="container">
+    <aside class="sidebar">
+    <h2>GYM</h2>
+    <ul>
+       <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="add-member.html">Add Member</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="attendance.html">Attendance</a></li>
+        <li><a href="attendance-history.html">Attendance-History</a></li>
+        <li><a href="payments.html">Payments</a></li>
+        <li><a href="reports.html" class="active">Reports</a></li>
+        <li><a href="index.html">Logout</a></li>
+    </ul>
+    </aside>
+    <main class="main-content">
+        <h1>Reports & Analytics</h1>
+        <div class="cards">
+            <div class="card">
+                <h3>Total Members</h3>
+                <p id="totalMembers">0</p>
+            </div>
+            <div class="card">
+                <h3>Active Members</h3>
+                <p id="activeMembers">0</p>
+            </div>
+            <div class="card">
+                <h3>Monthly Income</h3>
+                <p id="monthlyIncome">₹0</p>
+            </div>
+            <div class="card">
+                <h3>Total Attendance</h3>
+                <p id="totalAttendance">0</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button onclick="printReport()">Print Report</button>
+        </div>
+    </main>
+</div>
+    <script src="js/reports.js"></script>
+</body>
+</html>

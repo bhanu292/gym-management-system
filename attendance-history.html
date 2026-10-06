@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance History</title>
+    <link rel="stylesheet" href="css/attendance-history.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>GYM</h2>
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+
+                <li><a href="add-member.html">Add Member</a></li>
+
+                <li><a href="members.html">Members</a></li>
+
+                <li><a href="attendance.html">Attendance</a></li>
+
+                <li>
+                    <a href="attendance-history.html" class="active">
+                        Attendance History
+                    </a>
+                <li><a href="payments.html">Payments</a></li>
+
+                <li><a href="reports.html">Reports</a></li>    
+                </li> 
+            </ul>
+        </aside>
+        <main class="main-content">
+            <h1>Attendance History</h1>
+            <div class="filters">
+                <input type="date" id="filterDate">
+                <button id="showAllBtn">Show All</button>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="historyTable"></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="js/attendance-history.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>GYM</h2>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="add-member.html">Add-Member</a>
+            <a href="members.html">Members</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="attendance-history.html">Attendavce-History</a>
+            <a href="payments.html">Payments</a>
+            <a href="reports.html">Reports</a>
+            <button id="logout">Logout</button>
+        </div>
+        <div class="content">
+            <div class="cards">
+                <div class="card">
+                    <h3>Total Members</h3>
+                    <p id="totalMembers">0</p>
+                </div>
+                <div class="card">
+                    <h3>Active Members</h3>
+                    <p id="activeMembers">0</p>
+                </div>
+                <div class="card">
+                    <h3>Monthly Revenue</h3>
+                    <p id="monthlyIncome">₹0</p>
+                </div>
+                <div class="card">
+                    <h3>Attendance</h3>
+                    <p id="attendance">0</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

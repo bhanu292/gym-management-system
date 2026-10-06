@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments</title>
+    <link rel="stylesheet" href="css/payments.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>GYM</h2>
+            <ul>
+                 <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="add-member.html">Add Member</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="attendance-history.html">Attendance-History</a></li>
+                <li><a href="payments.html" class="active">Payments</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="index.html">Logout</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <h1>Payment Management</h1>
+            <div class="payment-form">
+                <select id="memberSelect">
+                    <option value="">Select Member</option>
+                </select>
+                <input type="number" id="amount" placeholder="Enter amount">
+                <select id="month">
+                     <option value="">Select Month</option>
+                    <option>January</option>
+                    <option>February</option>
+                    <option>March</option>
+                    <option>April</option>
+                    <option>May</option>
+                    <option>June</option>
+                    <option>July</option>
+                    <option>August</option>
+                    <option>September</option>
+                    <option>October</option>
+                    <option>November</option>
+                    <option>December</option>
+                </select>
+                <button id="payBtn">Create Bill</button>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Member</th>
+                            <th>Amount</th>
+                            <th>Month</th>
+                            <th>Status</th>
+                            <th>Receipt</th>
+                        </tr>
+                    </thead>
+                    <tbody id="paymentTable"></tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+    <script src="js/payment.js"></script>
+</body>
+</html>
